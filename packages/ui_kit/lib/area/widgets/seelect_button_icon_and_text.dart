@@ -114,7 +114,10 @@ class _AreaSelectionButtonWithIcon extends StatelessWidget
               child: Center(
                 child: Text(
                   title,
-                  style: const TextStyle(fontSize: 18.0),
+                  style: const TextStyle(
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
@@ -176,6 +179,7 @@ class _AreaSelectionButtonWithIconInactive extends StatelessWidget
                 style: TextStyle(
                   fontSize: 18.0,
                   color: ColorsApp.colorsApp.black45,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
