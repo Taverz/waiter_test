@@ -1,8 +1,6 @@
 name: waiter_test
 description: "A new Flutter project."
-
 publish_to: "none"
-
 version: 1.0.0+1
 
 environment:
@@ -14,10 +12,14 @@ dependencies:
 
   cupertino_icons: ^1.0.6
 
+  ui_kit:
+    path: "packages/ui_kit"
+  api_client:
+    path: "packages/api_client"
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^3.0.0
 
 flutter:
