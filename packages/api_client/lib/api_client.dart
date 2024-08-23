@@ -1,5 +1,7 @@
 library api_client;
 
+export 'models/models.dart';
+
 // Call this
 export 'core/core.dart';
 // ->
