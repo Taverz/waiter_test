@@ -1,5 +1,5 @@
 import 'package:api_client/interface/crud/crud_operation_interface.dart';
-import 'package:api_client/models/model_order.dart';
+import 'package:api_client/models/models.dart';
 
 class RepositoryProduct {
   final GroupCRUDOperation database;
@@ -17,6 +17,10 @@ class RepositoryProduct {
 
   Future<List<Order>> readAllOrder() {
     return database.readAllOrder();
+  }
+
+  Future<List<Product>> readAllProduct() {
+    return database.readAllProduct();
   }
 
   Future<int> updateOrder(Order item) {
