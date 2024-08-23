@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ui_kit/ui_kit.dart';
 
+import '../../sales_mode/pages/sales_page.dart';
+
 class AreaSelectPage extends StatelessWidget {
   const AreaSelectPage({super.key});
   @override
@@ -20,14 +22,24 @@ class AreaSelectPage extends StatelessWidget {
                 title: 'Основной зал',
                 backgroundColor: Colors.yellow.shade100,
                 onTap: () {
-                  //TODO:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const SalesPage(),
+                    ),
+                  );
                 },
               ),
               AreSelectionButton.active(
                 title: 'Летка',
                 backgroundColor: Colors.yellow.shade100,
                 onTap: () {
-                  //TODO:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const SalesPage(),
+                    ),
+                  );
                 },
               ),
               AreaSelectionButtonWithIcon.active(
@@ -36,7 +48,12 @@ class AreaSelectPage extends StatelessWidget {
                 backgroundColor: Colors.white,
                 backgroundIconColor: Colors.yellow.shade100,
                 onTap: () {
-                  //TODO:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const SalesPage(),
+                    ),
+                  );
                 },
               ),
               AreaSelectionButtonWithIcon.active(
@@ -45,7 +62,12 @@ class AreaSelectPage extends StatelessWidget {
                 backgroundColor: Colors.white,
                 backgroundIconColor: Colors.blue.shade100,
                 onTap: () {
-                  //TODO:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const SalesPage(),
+                    ),
+                  );
                 },
               ),
             ],

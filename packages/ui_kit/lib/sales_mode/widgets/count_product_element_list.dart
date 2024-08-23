@@ -19,23 +19,16 @@ class CountProductElementList {
         onChangePrice: onChangePrice,
       );
 
-  static Widget error({
-    required String title,
-    required double price,
-    required Function() countPlus,
-    required Function() countMinus,
-    required Function() onDelete,
-    required Function() onChangePrice,
-  }) =>
-      _CountProductElementList(
-        title: title,
-        price: price,
-        countPlus: countPlus,
-        countMinus: countMinus,
-        onDelete: onDelete,
-        onChangePrice: onChangePrice,
-        isError: true,
-      );
+  static Widget error() => const _CountProductElementListError();
+}
+
+class _CountProductElementListError extends StatelessWidget {
+  const _CountProductElementListError();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Text('Error');
+  }
 }
 
 class _CountProductElementList extends StatefulWidget
@@ -46,7 +39,6 @@ class _CountProductElementList extends StatefulWidget
   final Function() countMinus;
   final Function() onDelete;
   final Function() onChangePrice;
-  final bool isError;
 
   const _CountProductElementList({
     required this.title,
@@ -55,7 +47,6 @@ class _CountProductElementList extends StatefulWidget
     required this.countMinus,
     required this.onDelete,
     required this.onChangePrice,
-    this.isError = false,
   });
 
   @override
